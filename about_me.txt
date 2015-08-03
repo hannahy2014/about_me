@@ -1,0 +1,30 @@
+<——————About me App—————>
+
+▶︎ Create a seperate box for each section on landing page
+	* Career
+	* Education
+	* Contact/ about me
+	* Professional intro paragraph
+	* WebDev porfolio
+
+▶︎ Each box will contain a link to the information
+	* Ensure rest of info on page disappears when 		info is selected
+	* Include menu at bottom of page for navigation
+	* search function? 
+
+
+
+		 
+<——————CSS—————> 
+
+▶︎ Each box should contain a “taped” picture containing the link to the information - give the impression it’s on a pin-board.
+
+▶︎ Pictures to be produced in Pixelmator, PNG - layer link over the top - see Balsamiq.
+
+▶︎ Make “Hannah Mills Web Developer” into a header, keep with the pin-board theme.
+
+▶︎ Ensure rest off CSS is tidied (remove anything not functioning).
+
+
+
+
