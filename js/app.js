@@ -7,6 +7,7 @@
       $scope.selectSection = function(section) {
           $scope.selectedSection = section;
       }
+
   });
 
   sections = [
@@ -17,7 +18,7 @@
   },
   {
     title: "Education",
-    dates: "Nov 2014 - Jan 2015",
+    dates: "Nov 2014 - Feb 2015",
     school: "General Assembly",
     qualification: "Web Development Immersive",
 

@@ -20,6 +20,7 @@
         <ul>
             <li ng-repeat="section in sections | filter : {title: search} | orderBy: 'title'" ng-click="selectSection(section)">
             {{ section.title }}
+            
             </li>
         </ul>
       </nav>
