@@ -1,31 +1,110 @@
 <!DOCTYPE html>
-<html ng-app="aboutMeApp">
+<html>
 
 <head>
   <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/sections.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body ng-app>
 
-<!-- Make into a header in PM -->
     <h1>Hannah Mills</h1>   
-    <h2>Web Developer</h2>   
-<!-- Make into a header in PM -->
+    <h2>Junior Web Developer</h2>   
 
-  <div ng-controller="AboutMeController">
+<div ng-controller="contactController" id="contact">
+    <h2>{{title}}</h2>
+        {{address}}<br/>
+        {{tel}}<br/>
+        {{email}}
+</div>
+
+<div ng-controller="gaController" id="ga">
+    <h2>{{title}}</h2>
+        {{dates}}<br/>
+        {{school}}<br/>
+        {{qualification}}
+        <hr width="25%">
+
+    <div ng-controller="universityController" id="uni">
+      {{dates}}<br/>
+      {{school}}<br/>
+      {{qualification}}
+    </div>  
+</div>
+
+<div ng-controller="careerController" id="andiamo">
+    <h2>{{title}}</h2>
+    {{dates}}<br/>
+    {{position}}<br/>
+    {{company}}<br/>
+    {{more}}
+    <hr width="25%">
+
+<!-- Insert "more" hyperlink to take client through to complete info -->    
+
+    <div ng-controller="selfStudyController" id="self_study">
+    {{dates}}<br/>
+    {{position}}<br/>
+    {{more}}
+    </div>
+    <hr width="25%">
+
+    <div ng-controller="btgController" id="btg">
+    {{dates}}<br/>
+    {{position}}<br/>
+    {{company}}<br/>
+    {{more}}
+    </div>
+    <hr width="25%">
+
+    <div ng-controller="bbcController" id="bbc">
+    {{dates}}<br/>
+    {{position}}<br/>
+    {{company}}<br/>
+    {{more}}
+    </div>
+    <hr width="25%">
+
+    <div ng-controller="angelsController" id="angels">
+    {{dates}}<br/>
+    {{position}}<br/>
+    {{company}}<br/>
+    {{more}}
+    </div>
+    <hr width="25%">
+
+    <div ng-controller="bbcwwController" id="bbcww">
+    {{dates}}<br/>
+    {{position}}<br/>
+    {{company}}<br/>
+    {{more}}
+    </div>
+    <hr width="25%">
+
+    <div ng-controller="caseController" id="case">
+    {{dates}}<br/>
+    {{position}}<br/>
+    {{company}}<br/>
+    {{more}}
+    </div>
+
+</div>
+
+
+
+
+
+<!--   <div ng-controller="AboutMeController">
       <nav>
         <ul>
-            <li ng-repeat="section in sections | filter : {title: search} | orderBy: 'title'" ng-click="selectSection(section)">
+            <li ng-repeat="section in sections | orderBy: 'title'" ng-click="selectSection(section)">
             {{ section.title }}
-            
             </li>
         </ul>
       </nav>
-
-    <!-- **************************************** -->
 
     <section ng-show="selectedSection">
        <h2>{{selectedSection.title}}</h2>
@@ -33,98 +112,122 @@
           <tr>
             <td>{{selectedSection.address}}</td>
           </tr>
-
           <tr>
             <td>{{selectedSection.tel}}</td>
           </tr>
+       </table>
+     </section> -->
 
-<!--           Consider HTML snippet to DRY-up code -->
-        <table>  
+<!--       *********Education**********     
+ -->
+<!--   <div ng-controller="EducationController">
+      <nav>
+        <ul> -->
+            <!-- <li ng-repeat="education in educations | orderBy: 'title'" ng-click="selectEducation(education)"> -->
+            <!-- {{ education.title }} -->
+ <!--            </li>
+        </ul>
+      </nav>
+
+    <section ng-show="selectedSection">
+       <h2>{{selectedEducation.title}}</h2>
+       <table>
           <tr>
-            <td>{{selectedSection.dates}}</td>
+            <td>{{selectedEducation.school}}</td>
           </tr>
           <tr>
-            <td>{{selectedSection.qualification}}</td
+            <td>{{selectedEducation.qualification}}</td>
+          </tr>
+       </table>
+     </section>   -->    
+
+
+
+
+
+          <!-- <tr>
+            <td>{{selectedSection.dates}}</td>
           </tr>
           <tr>
             <td>{{selectedSection.school}}</td>
           </tr>
-        </table>  
+          <tr>
+            <td>{{selectedSection.qualification}}</td>
+          </tr>
 
-        <hr width="100%" align="center" color="#63bd9f" size="1px">
-
-        <table>
           <tr>
             <td>{{selectedSection.dates2}}</td>
           </tr>
-
-          <tr>
-            <td>{{selectedSection.qualification2}}</td
-          </tr>
-
           <tr>
             <td>{{selectedSection.school2}}</td>
           </tr>
-        </table>  
+          <tr>
+            <td>{{selectedSection.qualification2}}</td>
+          </tr>
 
-        <table>
           <tr>
             <td>{{selectedSection.dates3}}</td>
           </tr>
-
           <tr>
-            <td>{{selectedSection.qualification3}}</td
+            <td>{{selectedSection.position}}</td>
+          </tr>
+          <tr>
+            <td>{{selectedSection.company}}</td>
           </tr>
 
           <tr>
-            <td>{{selectedSection.school3}}</td>
+            <td>{{selectedSection.dates4}}</td>
           </tr>
-        </table> 
+          <tr>
+            <td>{{selectedSection.position2}}</td>
+          </tr> -->
+
+        
+       
 
 
+
+    <!-- **************Education details************ -->
+
+    <!-- <div ng-controller="EducationController">
+          <nav>
+            <ul>
+                <li ng-repeat="education in educations | filter : {title: search} | orderBy: 'title'" ng-click="selectEducation(education)">
+                {{ education.title }}
+                </li>
+            </ul>
+          </nav>
+     </div> -->     
+       
+
+    <!-- <section ng-show="selectedEducation"></section>
+    <h2>{{selectedEducation.title}}</h2>   
+          <table>  
+                <tr>
+                  <td>{{selectedEducation.dates}}</td
+                </tr>
+                <tr>
+                  <td>{{selectedEducation.school}}</td>
+                </tr>
+                <tr>
+                  <td>{{selectedEducation.qualification}}</td>
+                </tr>
+          </table>  
+     </section>    -->
+
+    <!-- **************Career details************ -->
 
     
-       </table>
 
-     </section>
-
-     <!-- ***************************************** -->     
-
-<!--     <div id="contact">
-      <h2>Contact information</h2>
-      <p>Apartment 11, 3 Regent Terrace, Rita Road, London, SW8 1AW</p>
-      <p>07818 064374</p>
-    </div> -->
-
-     <!-- ******************************************* -->
-
-<!--     <div id="education">
-      <h2>Education</h2>
-      <p>General Assembly</p>
-      <p>Web Development Immersive</p>
-      <p>November 2014 - January 2015</p>
-      <table>
-        <tr>
-          <td></td>
-        </tr>
-      </table>
-    </div> -->
-
-    <!-- ******************************************* -->
-
-<!--     <div id="wd_portfolio">
-      <h2>Web Development Portfolio</h2>
-      <p>www.aboutme.heroku.io</p>
-      <p>www.millsagram.heroku.io</p>
-      <p>www.recipes.heroku.io</p>
-    </div> -->
-
-    <!-- ******************************************* -->
+        <hr width="100%" align="center" color="#63bd9f" size="1px">
 
     <!-- ********** Intro paragraph *********** -->
-         <section ng-hide="selectedSection">
-             <h2>Home</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus massa nec venenatis varius. Maecenas ligula orci, pellentesque sit amet ante eget, ullamcorper venenatis lectus. Aenean imperdiet nisl id accumsan convallis. Vestibulum augue dolor, faucibus eget lorem a, gravida pulvinar dui. Aliquam ex dolor, tincidunt sit amet pharetra id, auctor et nisi. Aliquam non faucibus lorem, vitae ullamcorper orci. Vivamus posuere vehicula quam quis aliquet. Nullam lectus turpis, facilisis sed mi eget, euismod pulvinar velit. </p>
+         <section id="landing_paragraph" ng-hide="selectedSection">
+             <p>Web developer with initial experience in full stack development, I have a particular interest in front-end development with Javascript, Angular.js, HTML and CSS. 
+
+            After working for a several years in marketing, media and team coordinating roles, I set myself the challenge to become a web developer in a period of a year. I’m a good communicator and have a lot of experience in project planning and working in multi-disciplinary teams.
+
+            Technologies I have worked with: Javascript, Node.js, Angular.js, Git, github.com, Ruby on Rails, HTML, CSS, Wordpress, Balsamiq, Heroku.</p>
         </section>
       <!-- ***************************************** -->
   </div>
