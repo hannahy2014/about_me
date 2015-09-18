@@ -3,17 +3,13 @@ var contactController = function ($scope)
   $scope.address = "Apartment 11, 3 Regent Terrace, Rita Road, London, SW8 1AW";
   $scope.tel = "07818 064374";
   $scope.email = "hannahymills@gmail.com"
-}
-  $scope.
-;
+};
 
-// function hideDiv() {
-//     div = document.getElementById('hide');
-//     div.style.display = "block";
-// }
+
 
 var gaController = function ($scope)
 {
+  // model
   $scope.dates = "Nov 2014 - Feb 2015";
   $scope.school = "General Assembley";
   $scope.qualification = "Web Development Immersive"
