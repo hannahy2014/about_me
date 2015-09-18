@@ -1,16 +1,16 @@
-*{
+* {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
  
 body {
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
  
 /*Sections*/
 
-nav {
+/*nav {
   border: 1px solid black;
   width: 600px;
   border-radius: 5px;
@@ -18,7 +18,10 @@ nav {
   display: inline-block;
   vertical-align: top;
   background: #edd1c6;
+}*/
 
+#header {
+  text-align: center;
 }
 
 #landing_paragraph {
@@ -26,48 +29,86 @@ nav {
 }
 
 #contact {
-  border: 1px red;
+  width: 600px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#telephone {
+  width: 400px;
+  position: right;
+}
+
+​#show { 
+  display: none; 
+}​
+
+#andiamo {
   width: 400px;
   border-radius: 5px;
-  padding: 10px 40px;
-  display: inline-block;
-  vertical-align: top;
+  padding: 10px;
   margin: 10px;
   background: #d8b5ae;
 }
 
-#career {
-  border: 1px solid black;
-  width: 300px;
+#ga {
+  width: 400px;
   border-radius: 5px;
-  padding: 10px 40px;
-  display: inline-block;
-  vertical-align: top;
+  padding: 10px;
   margin: 10px;
-  background: #cbdcdd;
+  background: #d8b5ae;
 }
 
-#education {
-  border: 1px solid black;
-  width: 300px;
+#self_study {
+  width: 400px;
   border-radius: 5px;
-  padding: 10px 40px;
-  display: inline-block;
-  vertical-align: top;
+  padding: 10px;
   margin: 10px;
-  background: #bccddd;
+  background: #d8b5ae;
 }
 
-#wd_portfolio {
-  border: 1px solid black;
-  width: 300px;
+#btg {
+  width: 400px;
   border-radius: 5px;
-  padding: 10px 40px;
-  display: inline-block;
-  vertical-align: top;
+  padding: 10px;
   margin: 10px;
-  background: #9ca2b8;
+  background: #d8b5ae;
 }
+
+#bbc {
+  width: 400px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background: #d8b5ae;
+}
+
+#angels {
+  width: 400px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background: #d8b5ae;
+}
+
+#bbcww {
+  width: 400px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background: #d8b5ae;
+}
+
+#case {
+  width: 400px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background: #d8b5ae;
+}
+
+
 
 ul {
   width: 220px;
